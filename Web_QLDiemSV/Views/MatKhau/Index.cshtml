@@ -1,0 +1,31 @@
+﻿@model Web_QLDiemSV.Models.TaiKhoan
+
+@{
+    ViewData["Title"] = "Đổi mật khẩu";
+}
+
+<h1>Đổi mật khẩu</h1>
+
+<hr />
+<div class="row justify-content-md-center">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                @using (Html.BeginForm("DoiMatKhau", "MatKhau", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        <label>Nhập mật khẩu mới</label>
+                    </div>
+                    <br/>
+                    <div class="form-group">
+                        @Html.PasswordFor(m => m.MatKhau, new { @class = "form-control", @placeholder = "Nhập mật khẩu" })
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-primary" value="Đổi mật khẩu" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

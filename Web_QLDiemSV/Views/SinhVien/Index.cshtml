@@ -1,0 +1,43 @@
+﻿@model Web_QLDiemSV.Models.SinhVien
+
+@{
+    ViewData["Title"] = "Trang thông tin sinh viên";
+}
+
+<h1>Thông tin sinh viên</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Mã sinh viên
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaSv)
+        </dd>
+        <dt class = "col-sm-2">
+            Họ
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ho)
+        </dd>
+        <dt class = "col-sm-2">
+            Tên
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ten)
+        </dd>
+        <dt class = "col-sm-2">
+            Địa chỉ
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+        <dt class = "col-sm-2">
+            Số điện thoại
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sdt)
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Trang bảng điểm";
+}
+
+<h1>Bảng điểm sinh viên</h1>
+<hr/>
+@foreach (var kyNamHoc in Model)
+{
+    <h4>Năm học @kyNamHoc.Nam - Học kỳ @kyNamHoc.Ky</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã môn học</th>
+                <th>Tên môn học</th>
+                <th>Số Tín chỉ</th>
+                <th>Chuyên cần</th>
+                <th>Bài tập</th>
+                <th>Kiểm tra</th>
+                <th>Thực hành</th>
+                <th>Thi</th>
+                <th>Tổng kết</th>
+            </tr>
+        </thead> 
+        <tbody>
+            @{double tongDiem = 0;}
+            @{double tongSoTc = 0;}
+            @foreach (var bangDiem in kyNamHoc.bd)
+            {
+                <tr>
+                    <td>@bangDiem.MaMonHoc</td>
+                    <td>@bangDiem.TenMonHoc</td>
+                    <td>@bangDiem.SoTinChi</td>
+                    <td>@bangDiem.ChuyenCan</td>
+                    <td>@bangDiem.BaiTap</td>
+                    <td>@bangDiem.KiemTra</td>
+                    <td>@bangDiem.ThucHanh</td>
+                    <td>@bangDiem.Thi</td>
+                    <td>@bangDiem.TongKet</td>
+                </tr>
+                tongDiem += @bangDiem.TongKet * @bangDiem.SoTinChi;
+                tongSoTc += @bangDiem.SoTinChi;
+            }
+            @{double diemtb = Math.Round(tongDiem / tongSoTc, 2);}
+        </tbody> 
+    </table>
+    <label> - Điểm trung bình học kỳ hệ 10: @diemtb </label>
+    <hr/>
+}

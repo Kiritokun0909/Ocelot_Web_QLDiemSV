@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotAPIGateway", "OcelotAPIGateway.csproj", "{D636955E-881B-4C40-853F-C22D9D594851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_QLDiemSV", "..\Web_QLDiemSV\Web_QLDiemSV.csproj", "{A63E38E7-A918-4E59-A44B-3D19EF13837F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D636955E-881B-4C40-853F-C22D9D594851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D636955E-881B-4C40-853F-C22D9D594851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D636955E-881B-4C40-853F-C22D9D594851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D636955E-881B-4C40-853F-C22D9D594851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63E38E7-A918-4E59-A44B-3D19EF13837F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63E38E7-A918-4E59-A44B-3D19EF13837F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63E38E7-A918-4E59-A44B-3D19EF13837F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63E38E7-A918-4E59-A44B-3D19EF13837F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4F7B322-F8C6-4FAC-B458-C76C3B079FC8}
+	EndGlobalSection
+EndGlobal

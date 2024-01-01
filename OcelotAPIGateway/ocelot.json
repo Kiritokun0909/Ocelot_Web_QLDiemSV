@@ -1,0 +1,164 @@
+{
+  "Routes": [
+    //API_QLDiemSV
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/{id}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/maSinhVien={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/maSinhVien={id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/maLopTc={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/maLopTc={id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/maLopTc={maloptc}&masv={masv}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/maLopTc={maloptc}&masv={masv}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/maKhoa={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/maKhoa={id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/maMonHoc={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/maMonHoc={id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/namHoc={nam}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/maKhoa={nam}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/maLopSv={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/maLopSv={id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/qldiemsv/{controller}/matkhau",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4202
+        }
+      ],
+      "UpstreamPathTemplate": "/api/qldiemsv/{controller}/matkhau",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+
+
+    //API_SinhVien
+    {
+      "DownstreamPathTemplate": "/api/sinhvien/{controller}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4204
+        }
+      ],
+      "UpstreamPathTemplate": "/api/sinhvien/{controller}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/sinhvien/{controller}/maSinhVien={id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4204
+        }
+      ],
+      "UpstreamPathTemplate": "/api/sinhvien/{controller}/maSinhVien={id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/sinhvien/{controller}/matkhau",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4204
+        }
+      ],
+      "UpstreamPathTemplate": "/api/sinhvien/{controller}/matkhau",
+      "UpstreamHttpMethod": [ "Put" ]
+    }
+  ]
+}
